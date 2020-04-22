@@ -49,12 +49,12 @@ public:
 	~SHA512();
 };
 
-#define Ch(x,y,z) ((x&y)^(~x&z))
-#define Maj(x,y,z) ((x&y)^(x&z)^(y&z))
+#define Ch(x,y,z) ((x&y)^(~x&z))							
+#define Maj(x,y,z) ((x&y)^(y&z)^(z&x))
 #define RotR(x, n) ((x>>n)|(x<<((sizeof(x)<<3)-n)))
-#define Sig0(x) ((RotR(x, 28))^(RotR(x,34))^(RotR(x, 39)))
-#define Sig1(x) ((RotR(x, 14))^(RotR(x,18))^(RotR(x, 41)))
-#define sig0(x) (RotR(x, 1)^RotR(x,8)^(x>>7))
-#define sig1(x) (RotR(x, 19)^RotR(x,61)^(x>>6))
+#define Sig0(x) ((RotR(x, 18))^(RotR(x,43))^(RotR(x, 29)))
+#define Sig1(x) ((RotR(x, 33))^(RotR(x,38))^(RotR(x, 51)))
+#define sig0(x) ((RotR(x, 11))^(RotR(x,12))^(x>>9))
+#define sig1(x) ((x>>10)^RotR(x,16)^RotR(x,59))
 
 #endif
