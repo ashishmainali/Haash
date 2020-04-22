@@ -1,13 +1,13 @@
-#include "SHA512.h"
+#include "HAASH.h"
 #include <iostream>
 #include <sstream>
 
 int main(int argc, char *argv[]){
 
-	SHA512 sha512;
+	HAASH haash;
 	std::stringstream ss;
 	ss << argv[1];
-	std::cout << sha512.hash(ss.str()) << std::endl;;
+	std::cout << haash.hash(ss.str()) << std::endl;;
 
 	return 0;
 }
