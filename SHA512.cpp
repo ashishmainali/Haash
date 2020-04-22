@@ -71,7 +71,7 @@ void SHA512::process(uint64** buffer, size_t nBuffer, uint64* h){
 		memcpy(w, buffer[i], 16*sizeof(uint64));
 
 		for(size_t j=16; j<64; j++){
-			w[j] = w[j-16] + sig0(w[j-15]) + w[j-7] + sig1(w[j-2]);
+			w[j] = w[j-7] + sig0(w[j-6]) + w[j-11] + sig1(w[j-9]);
 		}
 		//init
 		memcpy(s, h, 8*sizeof(uint64));
@@ -80,14 +80,14 @@ void SHA512::process(uint64** buffer, size_t nBuffer, uint64* h){
 			uint64 temp1 = s[7] + Sig1(s[4]) + Ch(s[4], s[5], s[6]) + k[j] + w[j];
 			uint64 temp2 = Sig0(s[0]) + Maj(s[0], s[1], s[2]);
 
-			s[7] = s[6];
-			s[6] = s[5];
-			s[5] = s[4];
-			s[4] = s[3] + temp1;
-			s[3] = s[2];
-			s[2] = s[1];
-			s[1] = s[0];
-			s[0] = temp1 + temp2;
+			s[7] = s[0];
+			s[0] = s[2];
+			s[2] = s[5];
+			s[5] = s[4]; 
+			s[4] = s[3] ^ temp2;
+			s[3] = s[2] ^ temp2; 
+			s[2] = s[0] ^ temp1;
+			s[6] = temp1 + temp2 ^ temp1;
 		}
 
 		for(size_t j=0; j<8; j++){
