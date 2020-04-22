@@ -21,4 +21,4 @@ main.cpp provides an example usage of this hashing algorithm repository. It hash
 1. Clone the repository onto your disk: `https://github.com/ashishmainali/haash.git`
 2. Compile: `make main`
 3. Run: `./main test`
-4. Output: `5fb61a4da539cce76cf5d0b09954e7689398ec0c8b6aa62f1ab8107126e00c33141621f9de81ee95e31b426c5d2fa14a9b1e69227f4ed27776bf2791be63c55`
+4. Output: `74b4bc52b89c473b76cf5d0b09954e769f80903618da64248dda1f4ef3fb81d348ab2595bd0e6e1fb579f576d7ae5b2b2b49adb86a42857ec9344405b00e90`
