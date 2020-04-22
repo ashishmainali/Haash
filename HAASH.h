@@ -1,9 +1,9 @@
-#ifndef H_SHA512
-#define H_SHA512
+#ifndef H_HAASH
+#define H_HAASH
 
 #include <string>
 
-class SHA512{
+class HAASH{
 private:
 	typedef unsigned long long uint64;
 
@@ -45,8 +45,8 @@ private:
 public:
 	std::string hash(const std::string input);
 
-	SHA512();
-	~SHA512();
+	HAASH();
+	~HAASH();
 };
 
 #define Ch(x,y,z) ((x&y)^(~x&z))							

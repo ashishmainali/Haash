@@ -3,9 +3,9 @@ C++ implementation of the haash a faster modified secure SHA512 hashing algorith
 
 ## Usage
 ```c++
-#include "haash.h" //include SHA512 definition
+#include "haash.h" //include HAASH definition
 
-HAASH haash; //instantiate a SHA512 object
+HAASH haash; //instantiate a HAASH object
 haash.hash("Example"); //returns the hash as a string
 ```
 
