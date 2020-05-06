@@ -24,7 +24,7 @@ If there is no output after running the diff command, the test cases generates s
 4. Run: `./a.out`
 
 ## Example
-main.cpp provides an example usage of this hashing algorithm repository. It hashes the first argument given when running the object file.
+hashval.cpp provides an example usage of this hashing algorithm repository. It hashes the first argument given when running the object file.
 
 1. Clone the repository onto your disk: `https://github.com/ashishmainali/haash.git`
 2. Compile: `make main`
