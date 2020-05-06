@@ -8,12 +8,20 @@ C++ implementation of the haash a faster modified secure SHA512 hashing algorith
 HAASH haash; //instantiate a HAASH object
 haash.hash("Example"); //returns the hash as a string
 ```
+## Test Cases
+Verify the the output of the haash matches with given test cases.
+1. Clone the repository onto your disk: `git clone https://github.com/ashishmainali/haash.git` 
+2. Compile: `g++ test.cpp haash.cpp`
+3. Run: `./a.out > my_output.dat`
+4. Run: `diff my_output.dat test_output.dat`
+The two ouputs should be identical giving no ouput from the diff command. 
+If there is no output after running the diff command, the test cases generates same output. 
 
 ## Compile and run
 1. Clone the repository onto your disk: `git clone https://github.com/ashishmainali/haash.git` 
 2. Include the header file in your .cpp file: `#include "HAASH.h"`
-3. Compile: `g++ yourFileName.cpp SHA512.cpp` OR use `make main` 
-4. Run: `./a.out` or `./main`
+3. Compile: `g++ yourFileName.cpp haash.cpp` 
+4. Run: `./a.out`
 
 ## Example
 main.cpp provides an example usage of this hashing algorithm repository. It hashes the first argument given when running the object file.
