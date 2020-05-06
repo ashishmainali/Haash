@@ -1,4 +1,4 @@
-# haash
+# HAASH
 C++ implementation of the haash a faster modified secure SHA512 hashing algorithm version.
 
 ## Usage
@@ -9,6 +9,7 @@ HAASH haash; //instantiate a HAASH object
 haash.hash("Example"); //returns the hash as a string
 ```
 ## Test Cases
+![Testing](testrun.PNG?raw=true "Testrun")
 Verify the the output of the haash matches with given test cases.
 1. Clone the repository onto your disk: `git clone https://github.com/ashishmainali/haash.git` 
 2. Compile: `g++ test.cpp HAASH.cpp`
@@ -16,6 +17,7 @@ Verify the the output of the haash matches with given test cases.
 4. Run: `diff my_output.dat test_output.dat`
 The two outputs should be identical . 
 If there is no output after running the diff command, the test cases generates same output. 
+
 
 ## Compile and run
 1. Clone the repository onto your disk: `git clone https://github.com/ashishmainali/haash.git` 
