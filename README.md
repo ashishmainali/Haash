@@ -14,7 +14,7 @@ Verify the the output of the haash matches with given test cases.
 2. Compile: `g++ test.cpp haash.cpp`
 3. Run: `./a.out > my_output.dat`
 4. Run: `diff my_output.dat test_output.dat`
-The two ouputs should be identical giving no ouput from the diff command. 
+The two outputs should be identical . 
 If there is no output after running the diff command, the test cases generates same output. 
 
 ## Compile and run
