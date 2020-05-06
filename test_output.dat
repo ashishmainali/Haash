@@ -1,0 +1,14 @@
+Input:  
+Output: 490656a016a6fe3a76cf5d0b09954e76eea0f2c32cf34f38467b4d572ee6abbdfe59c222dfab0eeefe2a610253068d0d6320ae285f024aa63382a47b118e6bcb
+Input: 0 
+Output: 46cc1cb08e011cab76cf5d0b09954e764454c127dbe442c7d6f66ba231d4aec6ae635baf634416bb991c61980c6e17da0e2899c5911e5a8b2230a56c8792074
+Input: 00 
+Output: 5bd3e9867c79b2bc76cf5d0b09954e76a49da24c81db89d4ff7564c412f215f416a586e5a47169228bfbfcb1c7da4d8c23861555a16cc84bd26f8c5a27596691
+Input: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ab 
+Output: 4a4eb52c1e412a71b67ae8584caa73b01510da69d05f172dc05c6082de55d6b459c2f6d00c54e7576aa16b4e5603b86c9265389952eb5b5cbd29a99463eb5e4
+Input: a 
+Output: 1f3342737a3f0be876cf5d0b09954e766f97a3b50c66d579aad0eef3f20944e3f652d822ca4b5fe26a861c5f828b74fb23b453d9a9f43d219055788a22ec1499
+Input: aa 
+Output: f50a1b16df1dd28a76cf5d0b09954e765b8f66ff865af81bcdb6f46b3e2aa71f9ba460171682a309a8f2c04f0877b6d55b3c47036869d1d9a941c11eba3de0e
+Input: ab 
+Output: ec835e7f6d80ea2076cf5d0b09954e767dfd54f0e3bee26f6bc88cac2da2a8461fa60eeb529c2acb4d5bf633b4202d030117bc1226b29714c8f61a2bbde5177
